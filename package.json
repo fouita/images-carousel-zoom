@@ -1,0 +1,28 @@
+{
+  "name": "svelte-img-zoom",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-svelte": "^5.0.0",
+    "svelte": "^3.0.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "description": "Image zoom tailwind svelte fouita",
+  "version": "0.0.1",
+  "dependencies": {},
+  "author": "islem",
+  "license": "MIT"
+}
