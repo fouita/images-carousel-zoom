@@ -4,7 +4,7 @@ Svelte component to display and zoom on product images
 
 # install
 ```bash
-$npm install @fouita/images-carousel-zoom
+$npm i @fouita/images-carousel-zoom -D
 ```
 
 ![fouita simple zoom](https://cdn.fouita.com/assets/pics/template/image-zoom/carousel-zoom.gif)
