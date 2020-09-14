@@ -169,7 +169,7 @@ import Carousel from "./Carousel.svelte";
           use:setContainer>
           <div class="absolute flex overflow-x-hidden scroll o_img_fix" use:setPicture>
             {#each images.List as src,i}
-                <img {src} alt="" />
+                <img {src} alt="" class="border" />
             {/each}
           </div>
           <div class="hidden md:block">
