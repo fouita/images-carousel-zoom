@@ -168,7 +168,9 @@ import Carousel from "./Carousel.svelte";
           on:mouseleave={cancelMouseMove}
           use:setContainer>
           <div class="absolute flex overflow-x-hidden scroll o_img_fix" use:setPicture>
-            <Carousel {imagesList}/>
+            {#each images.List as src,i}
+                <img {src} alt="" />
+            {/each}
           </div>
           <div class="hidden md:block">
             <div
