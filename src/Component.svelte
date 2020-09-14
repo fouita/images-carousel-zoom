@@ -1,7 +1,8 @@
 <script>
 import { each } from "svelte/internal";
-
-  import ZoomIcon from "./ZoomIcon.svelte";
+import Zoom from "./ZoomImage.svelte";
+import ZoomIcon from "./ZoomIcon.svelte";
+import Carousel from "./Carousel.svelte";
   let m = { x: 0, y: 0 };
   let node = null;
   let container = null;
@@ -54,9 +55,8 @@ import { each } from "svelte/internal";
       }
     }
 
-	show_box = true;
+	  show_box = true;
 	
-
   }
   function handleMousemove(event) {
     m.x = event.clientX;
@@ -117,6 +117,7 @@ import { each } from "svelte/internal";
     picture.scrollLeft = i * picture.offsetWidth;
     images.selected = pic;
   }
+  let imagesList = images.List;
 </script>
 
 <style>
@@ -143,6 +144,7 @@ import { each } from "svelte/internal";
   <div
     class="sm:block md:flex items-center sm:justify-center md:justify-start
       md:mr-4 lg:justify-center bg-white">
+      
     <div class="flex md:block items-center justify-center bg-white">
       {#each images.List as l,i}
         <div class="mt-2 mr-2 ml-2">
@@ -166,9 +168,7 @@ import { each } from "svelte/internal";
           on:mouseleave={cancelMouseMove}
           use:setContainer>
           <div class="absolute flex overflow-x-hidden scroll o_img_fix" use:setPicture>
-            {#each images.List as l,i}
-              <img class="o_img_fix" alt="" src={l} />
-            {/each}
+            <Carousel {imagesList}/>
           </div>
           <div class="hidden md:block">
             <div

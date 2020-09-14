@@ -1,5 +1,5 @@
 {
-  "name": "svelte-img-zoom",
+  "name": "@fouita/images-carousel-zoom",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -14,13 +14,18 @@
     "svelte": "^3.0.0"
   },
   "keywords": [
-    "svelte"
+    "svelte",
+    "tailwindcss",
+    "fouita",
+    "carousel",
+    "image",
+    "zoom"
   ],
   "files": [
     "src",
     "dist"
   ],
-  "description": "Image zoom tailwind svelte fouita",
+  "description": "svelte tailwind Image carousel zoom",
   "version": "0.0.1",
   "dependencies": {},
   "author": "islem",
