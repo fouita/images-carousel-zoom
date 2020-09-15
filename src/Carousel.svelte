@@ -5,7 +5,7 @@
     export let images 
     let picture
 
-    let border_show = (new Array(6)).map((e,i) => i==0)
+    let border_show = [true, false, false, false, false, false]
 
     function showHideborder(i) {
         border_show = [false, false, false, false, false, false];
@@ -59,7 +59,7 @@
       {/each}
     </div>
 
-    <div class="xl:ml-10">
+    <div class="xl:ml-10 md:block md:mt-0 mt-2 flex justify-center">
       <div class="o_img_fix relative"> 
         <div class="flex overflow-hidden scroll o_img_fix" use:setPicture>
             {#each images.list as src,i}

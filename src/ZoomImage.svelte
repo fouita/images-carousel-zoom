@@ -125,4 +125,3 @@
 
 <ZoomArea {show_box} bind:scroll_div={scroll_div} {src} />
 
-
