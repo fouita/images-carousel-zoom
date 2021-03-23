@@ -92,7 +92,7 @@ import Carousel from "./Carousel.svelte";
       container.offsetLeft / 3.25;
   }
 
-  export const images ={
+  export let images ={
     selected :"https://multimedia.bbycastatic.ca/multimedia/products/500x500/130/13021/13021743.jpg",
 	List :  [
 	 "https://multimedia.bbycastatic.ca/multimedia/products/500x500/130/13021/13021743.jpg",
